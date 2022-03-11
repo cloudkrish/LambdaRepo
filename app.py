@@ -37,5 +37,7 @@ def get_hello_universe():
 def get_hello_universe():
     return {"message": "hello universe - PUT"}
     
+#arn:aws:lambda:us-east-1:017000801446:layer:AWSLambdaPowertoolsPython:13  
+    
 
 
