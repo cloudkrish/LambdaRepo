@@ -1,4 +1,4 @@
-Microservices developed for Data retrieval operations using AWS Lambda functions and API gateway
+Microservices developed for Data retrieval operations using AWS Lambda functions and API Gateway
 
 • Purpose: To perform CURD operations on Database via API calls
 
@@ -14,7 +14,7 @@ Microservices developed for Data retrieval operations using AWS Lambda functions
 
 • SDK: boto3 (AWS SDK for Python) 
 
-• API Authentication: using API keys
+• API Authentication: Using API keys
 
 • Testing: Either by AWS console or Postman
 
