@@ -1,18 +1,20 @@
-# LambdaRepo
-Microservices developed for Data retrieval operations using AWS Lambda functions and API gateway 
+Microservices developed for Data retrieval operations using AWS Lambda functions and API Gateway
 
-•	Purpose: To perfrom CURD operations on Database via API calls
+• Purpose: To perform CURD operations on Database via API calls
 
-•	Serverless: AWS Lambda Fucntions 
+• Serverless: AWS Lambda Functions
 
-•	API: AWS Rest API
+• API: AWS Rest API
 
-•	Language: Python
+• Language: Python
 
-•	Database: AWS DynamoDB
+• Database: AWS DynamoDB
 
-•	Major Modules used: aws_lambda_powertools and boto3
+• Python Layer: aws_lambda_powertools
 
-•	API Authentication: using API keys
+• SDK: boto3 (AWS SDK for Python) 
 
-• Tseting: Either by AWS console or Postman
+• API Authentication: Using API keys
+
+• Testing: Either by AWS console or Postman
+
