@@ -1,12 +1,18 @@
 # LambdaRepo
-Repository has code for AWS Lambda fucntion
+Microservices developed for Data retrieval operations using AWS Lambda functions and API gateway 
 
-•	Purpose: To perfrom CURD operations on DynamoDB via API calls
+•	Purpose: To perfrom CURD operations on Database via API calls
+
+•	Serverless: AWS Lambda Fucntions 
 
 •	API: AWS Rest API
 
 •	Language: Python
 
+•	Database: AWS DynamoDB
+
 •	Major Modules used: aws_lambda_powertools and boto3
 
-•	Authentication for API: using API keys
+•	API Authentication: using API keys
+
+• Tseting: Either by AWS console or Postman
