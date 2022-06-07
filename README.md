@@ -1,5 +1,5 @@
 # LambdaRepo
-•	Repository has code for AWS Lambda fucntion
+Repository has code for AWS Lambda fucntion
 
 •	Purpose: To perfrom CURD operations on DynamoDB via API calls
 
