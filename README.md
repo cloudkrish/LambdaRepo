@@ -1,4 +1,4 @@
-Microservices developed for CURD operations using AWS Lambda functions via API Gateway
+Microservices developed for CRUD operations using AWS Lambda functions via API Gateway
 
 • Purpose: To perform CURD operations on Database via API calls
 
