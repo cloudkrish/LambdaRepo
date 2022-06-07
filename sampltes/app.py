@@ -4,14 +4,13 @@ from aws_lambda_powertools.event_handler import APIGatewayRestResolver
 from aws_lambda_powertools.utilities import parameters
 from aws_lambda_powertools.utilities.validation import validate
 from aws_lambda_powertools.utilities.validation.exceptions import SchemaValidationError
-
 import boto3
-import schemas
 
-from get_function_module import get_func_detail
-from post_function_module import post_func_detail
-from put_function_module import put_func_detail
-from delete_function_module import delete_func_detail
+from module_repo.get_function_module import get_func_detail
+from module_repo.post_function_module import post_func_detail
+from module_repo.put_function_module import put_func_detail
+from module_repo.delete_function_module import delete_func_detail
+from module_repo import schemas
 
 
 tracer = Tracer()
