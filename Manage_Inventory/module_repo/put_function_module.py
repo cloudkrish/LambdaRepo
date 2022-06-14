@@ -6,19 +6,19 @@ tracer = Tracer()
 logger = Logger()
 
 
-def put_func_detail(emp_id):
-  if emp_id: 
+def put_func_detail(pid,quantity):
+  if pid: 
      dynamodb = boto3.resource('dynamodb')
-     table = dynamodb.Table('CloudEngineers') 
-     valid = table.query(KeyConditionExpression=Key('emp_id').eq(emp_id))
+     table = dynamodb.Table('stock_inventory') 
+     valid = table.query(KeyConditionExpression=Key('pid').eq(pid))
      if valid['Items']:
         response = table.update_item(
         Key={
-        'emp_id': emp_id
+        'pid': pid
         },
-        UpdateExpression="SET csp = :newcsp",
+        UpdateExpression="SET quantity = :newquantity",
         ExpressionAttributeValues={
-        ':newcsp': "aws"
+        ':newquantity': quantity
         }    )
         return {'success': "Data Updated succeffuly for the given item"}
      else:

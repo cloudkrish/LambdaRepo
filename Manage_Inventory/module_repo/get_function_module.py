@@ -7,11 +7,11 @@ tracer = Tracer()
 logger = Logger()
 
 
-def get_func_detail(emp_id):
+def get_func_detail(pid):
   dynamodb = boto3.resource('dynamodb')
-  table = dynamodb.Table('CloudEngineers')    
-  if emp_id:
-      result = table.query(KeyConditionExpression=Key('emp_id').eq(emp_id))
+  table = dynamodb.Table('stock_inventory')    
+  if pid:
+      result = table.query(KeyConditionExpression=Key('pid').eq(pid))
       logger.info(result)
       if result['Items']:
          return result['Items']

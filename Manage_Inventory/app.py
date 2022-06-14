@@ -24,18 +24,18 @@ def lambda_handler(event, context):
     return app.resolve(event, context)
 
 
-@app.get("/sampltes")
+@app.get("/manage_inventory")
 @tracer.capture_method
 def get_function():
-  emp_id = app.current_event.get_query_string_value(name="emp_id", default_value="")
-  response = get_func_detail(emp_id)
+  pid = app.current_event.get_query_string_value(name="pid", default_value="")
+  response = get_func_detail(pid)
   return {'statusCode': 200,
           'result': response
         }
 
  
 
-@app.post("/sampltes")
+@app.post("/manage_inventory")
 @tracer.capture_method
 def post_function():
     payload = app.current_event.json_body
@@ -51,20 +51,21 @@ def post_function():
         }
 
 
-@app.put("/sampltes")
+@app.put("/manage_inventory")
 @tracer.capture_method
 def put_function():
-  emp_id = app.current_event.get_query_string_value(name="emp_id", default_value="")
-  response = put_func_detail(emp_id)
+  pid = app.current_event.get_query_string_value(name="pid", default_value="")
+  quantity = app.current_event.get_query_string_value(name="quantity", default_value="")
+  response = put_func_detail(pid,quantity)
   return {'statusCode': 200,
           'result': response
         }
         
-@app.delete("/sampltes")
+@app.delete("/manage_inventory")
 @tracer.capture_method
 def delete_function():
-  emp_id = app.current_event.get_query_string_value(name="emp_id", default_value="")
-  response = delete_func_detail(emp_id)
+  pid = app.current_event.get_query_string_value(name="pid", default_value="")
+  response = delete_func_detail(pid)
   return {'statusCode': 200,
           'result': response
         }
