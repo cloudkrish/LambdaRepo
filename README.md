@@ -18,3 +18,4 @@ Microservices developed using AWS Lambda functions via API Gateway
 
 • Testing: Either by AWS console or Postman
 
+• Region: us-east-1
