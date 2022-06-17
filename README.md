@@ -10,7 +10,7 @@ Microservices developed using AWS Lambda functions via API Gateway
 
 • Database: AWS DynamoDB
 
-• Python Layer: aws_lambda_powertools
+• Lambda Function Layer: aws_lambda_powertools ( arn:aws:lambda:us-east-1:017000801446:layer:AWSLambdaPowertoolsPython:20)
 
 • SDK: boto3 (AWS SDK for Python) 
 
@@ -18,3 +18,4 @@ Microservices developed using AWS Lambda functions via API Gateway
 
 • Testing: Either by AWS console or Postman
 
+• Region: us-east-1
