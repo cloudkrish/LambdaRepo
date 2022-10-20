@@ -1,0 +1,27 @@
+•	Any windows server down issue, how he fixed it.
+  how he manged to bring it back and what is fix he did
+•	What Domain controller and how you plann for high avilabitity of DC
+  primary and secondary (2-10 in count) DC. 
+•	How roll over fo primary to secondary DC happens
+  how its identify primary DC is downa and how its picks secondary DC
+•	what is group policies and how its essential 
+•	What happens if Windows patch fails 
+Revert it too snapshot taken prior to patch and identify the reason for failure
+•	What monitoring system is used and what is agent based and agent less monitoring
+•	What kind of alerts and how it been configured from monitoring tool 
+•	What Backup tool is used and what kind of restore activities done
+ -File level backup and image level backup
+•	Decommissioning process - explain
+  notifying the owners
+  switching off server for few days
+  backing up and destroying if no issue for existing APP 
+  Retaining for few days to ensure its not needed or claimed again
+•	Troubleshooting ESXi down 
+Getting into KVM console and checking for H\W failure and taking action
+•	P2V migration in Vcentre
+Using which tool and procedure
+•	what is state file in terraform and how we manage it
+•	Any automation theme developed in PowerShell scripting and explain its process and success scenarios
+•	What is HA in Vcentre and load balancing in Clusters
+•	How to extend disk size  of existing windows machine in vCentre and  what are the ways
+  
